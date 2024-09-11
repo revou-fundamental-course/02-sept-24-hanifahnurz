@@ -4,8 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="container">
+        <nav class="wrapper">
+            <div class="pilihan">
+                <div class="math">Math</div>
+                <div class="ip">Ip</div>
+            </div>
+            <ul class="navigation">
+               <li><a href="#">segitiga</a></li>
+               <li><a href="#">jajargenjang</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <header>
+        <h1>welcome to mathip</h1>
+        <p>ingin menghitung luas tapi malas? MATHIP solusinya</p>
+    </header>
+
+    <main>
+
+        
+       
+        <section class="selection-form" id="selection-form">
+
+            <aside id="selection-form-luas">
+                <header>
+                    <h1 class="luas">luas segitiga</h1>
+                </header>
+
+                <article>
+                    <div class="luas-segitiga-img"></div>
+                    <p>rumus luas segitiga yaitu</p>
+                    <p class="rumus">L=1/2 x a x t</p>
+                    <P calss="keterangan"> 
+                        dimana :
+                        <div class="keterangan">L= Luas</div>
+                        <div class="keterangan">t= tinggi</div>
+                        <div class="keterangan">a= alas</div>
+                    </P>
+                </article>
+                
+                <form  id="form" action="">
+                    <header>
+                        <h1 class="menghitung">MENGHITUNG LUAS SEGITIGA</h1>
+                    </header>
+                    
+                    <fieldset class="kolom-input-luas">
+                        <legend>MASUKAN ANGKA DALAM CM</legend>
+                            <div class="input-control">
+                                <input id="tinggi" name="tinggi" class="masukan-angka-luas" type="number" placeholder="TINGGI SEGITIGA">
+                            </div>
+                            <div class="input-control">
+                            <input id="alas" name="alas" class="masukan-angka-luas" type="number" placeholder="ALAS SEGITIGA">
+                            </div>
+
+                        <input id="luas" name="luas" class="hasil" class="hasil" type="text" disabled="true">
+                        <input id="hasilLuas" value ="hitungLuas" class="hitung-btn" type="button" onclick="hitungLuas()">
+                        <button id="reset" class="reset-btn yellow-btn" type="reset" value="reset"> reset </button>
+                    </fieldset>
+                    
+                </form>
+                
+            </aside>
+            
+            <aside>
+
+                <header>
+                    <h1 class="luas">keliling segitiga</h1>
+                </header>
+
+                <article>
+                    <div class="keliling-segitiga-img"></div>
+                    <p>rumus keliling segitiga yaitu :</p>
+                    <p class="rumus">K = s + s + s</p>
+                    <P calss="keterangan"> 
+                        dimana :
+                        <div class="keterangan">K= keliling</div>
+                        <div class="keterangan">s= Panjang sisi</div>
+                        <div class="keterangan">-</div>
+                    </P>
+                    
+                </article>
+                
+                <form action="">
+
+                    <header>
+                        <h1 class="menghitung">MENGHITUNG KELILING SEGITIGA</h1>
+                    </header>
+                    
+                    <fieldset class="kolom-input-keliling">
+                        <legend>MASUKAN ANGKA DALAM CM</legend>
+                        <input id="a" name="a" class="masukan-angka-keliling" type="number" placeholder="SISI PERTAMA">
+                        <br>
+                        <input id="b" name="b" class="masukan-angka-keliling" type="number" placeholder="SISI KEDUA">
+                        <br>
+                        <input id="c" name="c" class="masukan-angka-keliling" type="number" placeholder="SISI KETIGA">
+                    <br>
+                    <input id="keliling" name="keliling" class="hasil" disabled="true" class="hasil" >
+                    <input id="hasilkeliling" value ="hitungKeliling" class="hitung-btn" type="button" onclick="hitungKeliling()">
+                    <button id="reset" class="reset-btn yellow-btn" type="reset" value="reset"> reset </button>
+                </fieldset>
+            
+                </form>
+            </aside>
+        </section>
+        
+
+    </main>
     
+    
+    <script src="js/script.js"></script>
 </body>
 </html>

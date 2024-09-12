@@ -120,6 +120,48 @@ article{
     margin-top: 20px;
 }
 
+.luas-jajar-img{
+    width: 219px;
+    height: 170px;
+    background-image: url(https://chochoirunnisa.wordpress.com/wp-content/uploads/2012/12/mfndf.jpeg);
+    background-size: contain;
+    background-position: center;
+    align-self: center;
+    margin-top: 20px;
+}
+
+.keliling-jajar-img{
+    width: 219px;
+    height: 170px;
+    background-image: url(https://cilacapklik.com/wp-content/uploads/2019/11/Rumus-Jajar-Genjang-1-1024x576.png.webp);
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: -30px;
+    align-self: center;
+    margin-top: 20px;
+}
+
+.luas-persegi-img{
+    width: 170px;
+    height: 170px;
+    background-image: url(https://o-cdn-cas.sirclocdn.com/parenting/images/Persegi_finirezyhome.wordpress.co.width-500.format-webp.webp);
+    background-size: cover;
+    background-position: center;
+    align-self: center;
+    margin-top: 20px;
+}
+
+.keliling-persegi-img{
+    width: 170px;
+    height: 170px;
+    background-image: url(https://img.inews.co.id/media/822/files/inews_new/2022/10/24/rumus_keliling_persegi.jpg);
+    background-size: 244px;
+    background-position-x: -32px;
+    background-position-y: 11px;
+    align-self: center;
+    margin-top: 20px;
+}
+
 .rumus{
     text-align: center;
 }
@@ -174,6 +216,8 @@ article{
     width: 100%;
     height: 100%;
     font-size: larger;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 .reset-btn{
     display: flex;

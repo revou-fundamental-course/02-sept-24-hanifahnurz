@@ -14,8 +14,9 @@
                 <div class="ip">Ip</div>
             </div>
             <ul class="navigation">
-               <li><a href="#">segitiga</a></li>
-               <li><a href="#">jajargenjang</a></li>
+               <li><a href="#selection-form-luas">segitiga</a></li>
+               <li><a href="#selection-form-jajargenjang">jajargenjang</a></li>
+               <li><a href="#selection-form-persegi">persegi</a></li>
             </ul>
         </nav>
     </div>
@@ -26,8 +27,8 @@
     </header>
 
     <main>
-
         
+    
        
         <section class="selection-form" id="selection-form">
 
@@ -59,9 +60,10 @@
                                 <input id="tinggi" name="tinggi" class="masukan-angka-luas" type="number" placeholder="TINGGI SEGITIGA">
                             </div>
                             <div class="input-control">
-                            <input id="alas" name="alas" class="masukan-angka-luas" type="number" placeholder="ALAS SEGITIGA">
+                                <input id="alas" name="alas" class="masukan-angka-luas" type="number" placeholder="ALAS SEGITIGA">
                             </div>
-
+                            <p>hasilnya dalam cm adalah :</p>
+                            
                         <input id="luas" name="luas" class="hasil" class="hasil" type="text" disabled="true">
                         <input id="hasilLuas" value ="hitungLuas" class="hitung-btn" type="button" onclick="hitungLuas()">
                         <button id="reset" class="reset-btn yellow-btn" type="reset" value="reset"> reset </button>
@@ -103,7 +105,8 @@
                         <input id="b" name="b" class="masukan-angka-keliling" type="number" placeholder="SISI KEDUA">
                         <br>
                         <input id="c" name="c" class="masukan-angka-keliling" type="number" placeholder="SISI KETIGA">
-                    <br>
+                        <br>
+                        <p>hasilnya dalam cm adalah :</p>
                     <input id="keliling" name="keliling" class="hasil" disabled="true" class="hasil" >
                     <input id="hasilkeliling" value ="hitungKeliling" class="hitung-btn" type="button" onclick="hitungKeliling()">
                     <button id="reset" class="reset-btn yellow-btn" type="reset" value="reset"> reset </button>
@@ -116,7 +119,181 @@
 
     </main>
     
-    
+    <main>
+
+        
+       
+        <section class="selection-form" id="selection-form">
+
+            <aside id="selection-form-persegi">
+                <header>
+                    <h1 class="luas">luas jajargenjang</h1>
+                </header>
+
+                <article>
+                    <div class="luas-jajar-img"></div>
+                    <p>rumus luas jajargenjang yaitu</p>
+                    <p class="rumus">L= a x t</p>
+                    <P calss="keterangan"> 
+                        dimana :
+                        <div class="keterangan">L= Luas</div>
+                        <div class="keterangan">t= tinggi</div>
+                        <div class="keterangan">a= alas</div>
+                    </P>
+                </article>
+                
+                <form  action="">
+                    <header>
+                        <h1 class="menghitung">MENGHITUNG LUAS JAJARGENJANG</h1>
+                    </header>
+                    
+                    <fieldset class="kolom-input-luas">
+                        <legend>MASUKAN ANGKA DALAM CM</legend>
+                            <div class="input-control">
+                                <input id="tinggi-jajar" name="tinggiJajar" class="masukan-angka-luas" type="number" placeholder="TINGGI JAJARGENJANG">
+                            </div>
+                            <div class="input-control">
+                                <input id="alas-jajar" name="alasJajar" class="masukan-angka-luas" type="number" placeholder="ALAS JAJARGENJANG">
+                            </div>
+                            <p>hasilnya dalam cm adalah :</p>
+                            
+                        <input id="luas-jajar" name="luas-Jajar" class="hasil" class="hasil" type="text" disabled="true">
+                        <input id="hasilLuas" value ="hitungLuas" class="hitung-btn" type="button" onclick="hitungLuasJajar()">
+                        <button id="reset" class="reset-btn yellow-btn" type="reset" value="reset"> reset </button>
+                    </fieldset>
+                    
+                </form>
+                
+            </aside>
+            
+            <aside>
+
+                <header>
+                    <h1 class="luas">keliling jajargenjang</h1>
+                </header>
+
+                <article>
+                    <div class="keliling-jajar-img"></div>
+                    <p>rumus keliling jajargenjang yaitu :</p>
+                    <p class="rumus">K = 2a + 2b</p>
+                    <P calss="keterangan"> 
+                        dimana :
+                        <div class="keterangan">K= keliling</div>
+                        <div class="keterangan">a= sisi lebar</div>
+                        <div class="keterangan">b= sisi panjang </div>
+                    </P>
+                    
+                </article>
+                
+                <form action="">
+
+                    <header>
+                        <h1 class="menghitung">MENGHITUNG KELILING JAJARGENJANG</h1>
+                    </header>
+                    
+                    <fieldset class="kolom-input-keliling">
+                        <legend>MASUKAN ANGKA DALAM CM</legend>
+                        <input id="lebar-jajar" name="lebar-jajar" class="masukan-angka-keliling" type="number" placeholder="LEBAR JAJARGENJANG">
+                        <br>
+                        <input id="panjang-jajar" name="panjang-jajar" class="masukan-angka-keliling" type="number" placeholder="PANJANG JAJARGENJANG">
+                        <br>
+                        <p>hasilnya dalam cm adalah :</p>
+                    <input id="keliling-jajar" name="keliling-jajargenjang" class="hasil" disabled="true" class="hasil" >
+                    <input id="hasilkeliling" value ="hitungKeliling" class="hitung-btn" type="button" onclick="hitungKelilingJajar()">
+                    <button id="reset" class="reset-btn yellow-btn" type="reset" value="reset"> reset </button>
+                </fieldset>
+            
+                </form>
+            </aside>
+        </section>
+        
+
+    </main>
+
+    <main>
+
+        
+       
+        <section class="selection-form" id="selection-form">
+
+            <aside id="selection-form-persegi">
+                <header>
+                    <h1 class="luas">luas persegi</h1>
+                </header>
+
+                <article>
+                    <div class="luas-persegi-img"></div>
+                    <p>rumus luas persegi yaitu :</p>
+                    <p class="rumus">L= s x s</p>
+                    <P calss="keterangan"> 
+                        dimana :
+                        <div class="keterangan">L= Luas</div>
+                        <div class="keterangan">s= sisi</div>
+                    </P>
+                </article>
+                
+                <form  action="">
+                    <header>
+                        <h1 class="menghitung">MENGHITUNG LUAS PERSEGI</h1>
+                    </header>
+                    
+                    <fieldset class="kolom-input-luas">
+                        <legend>MASUKAN ANGKA DALAM CM</legend>
+                            <div class="input-control">
+                                <input id="sisi-persegi" name="tinggiPersegi" class="masukan-angka-luas" type="number" placeholder="SISI PERSEGI">
+                            </div>
+                            <p>hasilnya dalam cm adalah :</p>
+                            
+                        <input id="luas-persegi" name="luas-persegi" class="hasil" class="hasil" type="text" disabled="true">
+                        <input id="hasilLuas" value ="hitungLuas" class="hitung-btn" type="button" onclick="hitungLuasPersegi()">
+                        <button id="reset" class="reset-btn yellow-btn" type="reset" value="reset"> reset </button>
+                    </fieldset>
+                    
+                </form>
+                
+            </aside>
+            
+            <aside>
+
+                <header>
+                    <h1 class="luas">keliling persegi</h1>
+                </header>
+
+                <article>
+                    <div class="keliling-persegi-img"></div>
+                    <p>rumus keliling persegi yaitu :</p>
+                    <p class="rumus">K = 4 x s</p>
+                    <P calss="keterangan"> 
+                        dimana :
+                        <div class="keterangan">K= keliling</div>
+                        <div class="keterangan">s= sisi </div>
+                    </P>
+                    
+                </article>
+                
+                <form action="">
+
+                    <header>
+                        <h1 class="menghitung">MENGHITUNG KELILING PERSEGI</h1>
+                    </header>
+                    
+                    <fieldset class="kolom-input-keliling">
+                        <legend>MASUKAN ANGKA DALAM CM</legend>
+                        <input id="sisik-persegi" name="sisi-persegi" class="masukan-angka-keliling" type="number" placeholder="SISI PERSEGI">
+                        <br>
+                        <p>hasilnya dalam cm adalah :</p>
+                    <input id="keliling-persegi" name="keliling-persegi" class="hasil" disabled="true" class="hasil" >
+                    <input id="hasilkeliling" value ="hitungKeliling" class="hitung-btn" type="button" onclick="hitungKelilingPersegi()">
+                    <button id="reset" class="reset-btn yellow-btn" type="reset" value="reset"> reset </button>
+                </fieldset>
+            
+                </form>
+            </aside>
+        </section>
+        
+
+    </main>
+
     <script src="js/script.js"></script>
 </body>
 </html>

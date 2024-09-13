@@ -17,6 +17,10 @@
                <li><a href="#selection-form-luas">segitiga</a></li>
                <li><a href="#selection-form-jajargenjang">jajargenjang</a></li>
                <li><a href="#selection-form-persegi">persegi</a></li>
+               <li><a href="#selection-form-persegi-panjang">persegi panjang</a></li>
+               <li><a href="#selection-form-belah-ketupat">belah ketupat</a></li>
+               <li><a href="#selection-form-layang-layang">layang-layang</a></li>
+               <li><a href="#selection-form-lingkaran">lingkaran</a></li>
             </ul>
         </nav>
     </div>
@@ -125,7 +129,7 @@
        
         <section class="selection-form" id="selection-form">
 
-            <aside id="selection-form-persegi">
+            <aside id="selection-form-jajargenjang">
                 <header>
                     <h1 class="luas">luas jajargenjang</h1>
                 </header>
@@ -284,6 +288,184 @@
                         <p>hasilnya dalam cm adalah :</p>
                     <input id="keliling-persegi" name="keliling-persegi" class="hasil" disabled="true" class="hasil" >
                     <input id="hasilkeliling" value ="hitungKeliling" class="hitung-btn" type="button" onclick="hitungKelilingPersegi()">
+                    <button id="reset" class="reset-btn yellow-btn" type="reset" value="reset"> reset </button>
+                </fieldset>
+            
+                </form>
+            </aside>
+        </section>
+        
+
+    </main>
+
+    <main>
+
+        
+       
+        <section class="selection-form" id="selection-form">
+
+            <aside id="selection-form-persegi-panjang">
+                <header>
+                    <h1 class="luas">luas persegi panjang</h1>
+                </header>
+
+                <article>
+                    <div class="luas-persegi-panjang-img"></div>
+                    <p>rumus luas persegi panjang yaitu :</p>
+                    <p class="rumus">L= p x l</p>
+                    <P calss="keterangan"> 
+                        dimana :
+                        <div class="keterangan">L= Luas</div>
+                        <div class="keterangan">p= panjang</div>
+                        <div class="keterangan">l= lebar</div>
+                    </P>
+                </article>
+                
+                <form  action="">
+                    <header>
+                        <h1 class="menghitung">MENGHITUNG LUAS PERSEGI PANJANG</h1>
+                    </header>
+                    
+                    <fieldset class="kolom-input-luas">
+                        <legend>MASUKAN ANGKA DALAM CM</legend>
+                            <div class="input-control">
+                                <input id="persegi-panjang" name="tinggiPersegiPanjang" class="masukan-angka-luas" type="number" placeholder="SISI PANJANG">
+                            </div>
+                            <div class="input-control">
+                                <input id="persegi-lebar" name="lebarPersegiPanjang" class="masukan-angka-luas" type="number" placeholder="SISI LEBAR">
+                            </div>
+                            <p>hasilnya dalam cm adalah :</p>
+                            
+                        <input id="luas-persegi-panjang" name="luas-persegi-panjang" class="hasil" class="hasil" type="text" disabled="true">
+                        <input id="hasilLuas" value ="hitungLuas" class="hitung-btn" type="button" onclick="hitungLuasPersegiPanjang()">
+                        <button id="reset" class="reset-btn yellow-btn" type="reset" value="reset"> reset </button>
+                    </fieldset>
+                    
+                </form>
+                
+            </aside>
+            
+            <aside>
+
+                <header>
+                    <h1 class="luas">keliling persegi panjang</h1>
+                </header>
+
+                <article>
+                    <div class="keliling-persegi-panjang-img"></div>
+                    <p>rumus keliling persegi panjang yaitu :</p>
+                    <p class="rumus">K = 2p + 2l</p>
+                    <P calss="keterangan"> 
+                        dimana :
+                        <div class="keterangan">K= keliling</div>
+                        <div class="keterangan">p= panjang </div>
+                        <div class="keterangan">l= lebar </div>
+                    </P>
+                    
+                </article>
+                
+                <form action="">
+
+                    <header>
+                        <h1 class="menghitung">MENGHITUNG KELILING PERSEGI PANJANG</h1>
+                    </header>
+                    
+                    <fieldset class="kolom-input-keliling">
+                        <legend>MASUKAN ANGKA DALAM CM</legend>
+                        <input id="persegik-panjang" name="sisi-persegi-panjang" class="masukan-angka-keliling" type="number" placeholder="SISI PANJANG">
+                        <br>
+                        <input id="persegik-lebar" name="sisi-persegi-lebar" class="masukan-angka-keliling" type="number" placeholder="SISI LEBAR">
+                        <br>
+                        <p>hasilnya dalam cm adalah :</p>
+                    <input id="keliling-persegi-panjang" name="keliling-persegi-panjang" class="hasil" disabled="true" class="hasil" >
+                    <input id="hasilkeliling" value ="hitungKeliling" class="hitung-btn" type="button" onclick="hitungKelilingPersegiPanjang()">
+                    <button id="reset" class="reset-btn yellow-btn" type="reset" value="reset"> reset </button>
+                </fieldset>
+            
+                </form>
+            </aside>
+        </section>
+        
+
+    </main>
+
+    <main>
+
+        
+       
+        <section class="selection-form" id="selection-form">
+
+            <aside id="selection-form-belah-ketupat">
+                <header>
+                    <h1 class="luas">luas belah ketupat</h1>
+                </header>
+
+                <article>
+                    <div class="luas-belah-ketupat-img"></div>
+                    <p>rumus luas belah ketupat yaitu :</p>
+                    <p class="rumus">L= 1/2 x d1 x d2</p>
+                    <P calss="keterangan"> 
+                        dimana :
+                        <div class="keterangan">L= Luas</div>
+                        <div class="keterangan">d1= diagonal sisi</div>
+                        <div class="keterangan">d2 diagonal sisi</div>
+                    </P>
+                </article>
+                
+                <form  action="">
+                    <header>
+                        <h1 class="menghitung">MENGHITUNG LUAS BELAH KETUPAT</h1>
+                    </header>
+                    
+                    <fieldset class="kolom-input-luas">
+                        <legend>MASUKAN ANGKA DALAM CM</legend>
+                            <div class="input-control">
+                                <input id="d1" name="d1" class="masukan-angka-luas" type="number" placeholder="DIAGONAL SISI 1">
+                                <input id="d2" name="d2" class="masukan-angka-luas" type="number" placeholder="DIAGONAL SISI 2">
+                            </div>
+                            <p>hasilnya dalam cm adalah :</p>
+                            
+                        <input id="luas-belah-ketupat" name="luas-belah-ketupat" class="hasil" class="hasil" type="text" disabled="true">
+                        <input id="hasilLuas" value ="hitungLuas" class="hitung-btn" type="button" onclick="hitungLuasBelah()">
+                        <button id="reset" class="reset-btn yellow-btn" type="reset" value="reset"> reset </button>
+                    </fieldset>
+                    
+                </form>
+                
+            </aside>
+            
+            <aside>
+
+                <header>
+                    <h1 class="luas">keliling belah ketupat</h1>
+                </header>
+
+                <article>
+                    <div class="keliling-belah ketupat-img"></div>
+                    <p>rumus keliling belah ketupat yaitu :</p>
+                    <p class="rumus">K = 4 x s</p>
+                    <P calss="keterangan"> 
+                        dimana :
+                        <div class="keterangan">K= keliling</div>
+                        <div class="keterangan">s= sisi </div>
+                        <div class="keterangan">-</div>
+                    </P>
+                    
+                </article>
+                
+                <form action="">
+
+                    <header>
+                        <h1 class="menghitung">MENGHITUNG KELILING BELAH KETUPAT</h1>
+                    </header>
+                    
+                    <fieldset class="kolom-input-keliling">
+                        <legend>MASUKAN ANGKA DALAM CM</legend>
+                        <input id="sisik-belah" name="sisik-belah" class="masukan-angka-keliling" type="number" placeholder="SISI BELAH KETUPAT">
+                        <br>
+                        <p>hasilnya dalam cm adalah :</p>
+                    <input id="keliling-belah-ketupat" name="keliling-belah-ketupat" class="hasil" disabled="true" class="hasil" >
+                    <input id="hasilkeliling" value ="hitungKeliling" class="hitung-btn" type="button" onclick="hitungKelilingBelah()">
                     <button id="reset" class="reset-btn yellow-btn" type="reset" value="reset"> reset </button>
                 </fieldset>
             

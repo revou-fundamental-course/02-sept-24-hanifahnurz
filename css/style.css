@@ -47,6 +47,7 @@ h1,p{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-x: auto;
 }
 
 .navigation>li{
@@ -239,4 +240,5 @@ article{
     .selection-form{
         flex-direction: column;
     }
+
 }
